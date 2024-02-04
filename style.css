@@ -1,0 +1,132 @@
+.name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 90px;
+    color: rgb(126, 55, 4);
+}
+body{
+    background-color: burlywood;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(126, 55, 4);
+}
+.push{
+    margin-left: auto;
+    margin-right: 50px;
+}
+nav{
+    border: 1px solid #370101;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+#grid, #insideitem{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.item{
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#370101;
+}
+.item img{
+        width:100%;
+        height: auto;
+        border-radius: 8px; 
+}
+#recipe1{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+h3{
+    color:#220000;
+}
+#recipe2{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+#about{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+#recipe3{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+#recipe4{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+#recipe5{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+#recipe6{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+#recipe7{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+#recipe8{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+.caption{
+    font-size: 20px;
+}
+.user{
+    font-size: 13px;
+}
+#contact{
+    color: rgb(126, 55, 4);
+    display:none;
+}
+#header{
+    display: block;
+    color: #220000;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+#allrecipe{
+    display: none;
+    color: #220000;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+#tip-header{
+    margin-top: 40px;
+    color: #220000;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+#tip-item{
+    font-size: 1.1em;
+    color: rgb(126, 55, 4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+#hideitem1{
+    display:none;
+}
+#hideitem2{
+    display:none;
+}
+#hideitem3{
+    display:none;
+}
+#alllink{
+    display: none;
+}
+#tips{
+    display: block;
+}
+#link2{
+    display: none;
+}

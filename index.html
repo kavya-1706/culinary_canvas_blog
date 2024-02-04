@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CulinaryCanvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="name">
+        CulinaryCanvas
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="back()">Home</a></li>
+            <li><a href="#about" onclick="about()">About</a></li>
+            <li><a href="#recipes" onclick="recipes()">Recipes</a></li>
+            <div class="push">
+            <li><a href="#contact" onclick="contact()">Contact</a></li>
+        </div>
+        </ul>
+    </nav> <br> 
+    <div id="header"> Featured Recipes- <br> </div>
+    <div id="allrecipe">
+        Recipes-
+        <br>  
+    </div>
+    <div id="grid">
+        <div class="item">
+            <img src="https://media.gettyimages.com/id/1334105187/photo/delicious-pav-bhaji-served-with-appetizers-on-a-wooden-tray.jpg?s=612x612&w=0&k=20&c=ZoMtJqUWdVAgggtTMV4yIV6F5HzqgsaPOycNd1jmyvE=" alt="">
+           <a href="#recipe1" onclick="recipe1()">Get Recipe</a> 
+            <div class="caption">PAV BHAJI</div>
+            <div class="user">By- @TastyTalesEater</div>
+        </div>
+        <div class="item">
+            <img src="https://media.gettyimages.com/id/1369632825/photo/indian-dessert-gulab-jamun-in-white-bowl.jpg?s=612x612&w=0&k=20&c=3n8OCZuUe7ItQlARfL_J1i7GK2vDviauUZ2wz150W_c=" alt="">
+          <a href="#recipe2" onclick="recipe2()">Get Recipe</a> 
+            <div class="caption">GULAB JAMUN</div>
+            <div class="user">By- @GourmetGleeGal</div>
+        </div>
+        <div class="item">
+            <img src="https://media.gettyimages.com/id/1255787230/photo/tasty-blueberry-pancakes-with-syrup.jpg?s=612x612&w=0&k=20&c=URxgVkNFZWvGPpA-OOhE4v9M7qYiExr3tAhSAF_6Lq8=" alt="">
+           <a href="#recipe3" onclick="recipe3()">Get Recipe</a> 
+            <div class="caption">PANCAKE</div>
+            <div class="user">By- @CulinaryCanvasDreamer</div>
+        </div>
+        <div class="item">
+            <img src="https://media.gettyimages.com/id/1149029924/photo/unfrosted-cupcakes-on-a-white-plate.jpg?s=612x612&w=0&k=20&c=8H42c7o6qfk39ObfolAaDMStc6AyxXrx3NDGBPDWgyk=" alt="">
+         <a href="#recipe4" onclick="recipe4()">Get Recipe</a> 
+            <div class="caption">MUFFIN</div>
+            <div class="user">By- @CulinaryCanvasDreamer</div>
+        </div>
+        <div class="item">
+            <img src="https://media.gettyimages.com/id/1220390518/photo/vegan-super-sandwich-served-with-sprouts.jpg?s=612x612&w=0&k=20&c=4FZnOUS7CmlPonqfvLml_vbt6Lm31koKmKYkR65B6sw=" alt="">
+        <a href="#recipe5" onclick="recipe5()">Get Recipe</a> 
+            <div class="caption">SANDWICH</div>
+            <div class="user">By- @SavoryScribeChef</div>
+        </div>
+        <div class="item" id="hideitem1">
+            <img src="https://images.unsplash.com/photo-1622973536968-3ead9e780960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BhZ2hldHRpfGVufDB8fDB8fHww" alt="">
+    <a href="#recipe6" onclick="recipe6()">Get Recipe</a> 
+        <div class="caption">SPAGHETTI</div>
+        <div class="user">By- @GourmetGleeGal</div>
+        </div>
+        <div class="item" id="hideitem2">
+            <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpY2tlbiUyMHRpa2thJTIwbWFzYWxhfGVufDB8fDB8fHww" alt="">
+    <a href="#recipe7" onclick="recipe7()">Get Recipe</a> 
+        <div class="caption">CHICKEN TIKKA MASALA</div>
+        <div class="user">By- @TastyTalesEater</div>
+        </div>
+        <div class="item" id="hideitem3">
+            <img src="https://images.unsplash.com/photo-1626263468007-a9e0cf83f1ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNob2NvbGF0ZSUyMGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+    <a href="#recipe8" onclick="recipe8()">Get Recipe</a> 
+        <div class="caption">CHOCOLATE LAVA CAKE</div>
+        <div class="user">By- @CulinaryCanvasDreamer</div>
+        
+    </div>
+    </div>
+    <div id="alllink"> <br> <a href="#" onclick="back()">Click to go back To Home Page</a> <br> 
+    </div> 
+    <div id="link2"><a href="#recipes" onclick="recipes()">Click to go to Recipe Page</a></div>
+    <div id="contact">
+        <h3>Contact:</h3>
+        <p>Made By- <br> Kavya Anil</p>
+        <p>LinkedIn- <a href="https://www.linkedin.com/in/kavya-anil-8bb594264/">Click to go to LinkedIn Page</a></p>
+        <br>  <a href="#" onclick="back()">Click to go back To Home Page</a>
+    
+    </div>
+    <div id="tips">
+        <div id="tip-header">Cooking Tips and Tricks-</div>
+        <br><div id="tip-item"> 
+         1. Keep Knives Sharp: <br> A sharp knife makes cutting and slicing ingredients much easier and safer. Dull knives can slip and cause accidents. Invest in a good knife sharpener or get your knives professionally sharpened regularly to maintain their sharpness.
+     <br> <br> 2. Prep Ingredients First: <br> Before you start cooking, gather all your ingredients and prep them accordingly. Chop vegetables, measure out spices, and arrange everything within reach. This ensures a smooth cooking process and prevents any last-minute scrambling for ingredients. <br>
+     <br> 3. Taste as You Go: <br> Taste your food as you cook and adjust the seasoning accordingly. Seasoning is key to bringing out the flavors in your dishes. Add salt, pepper, herbs, and spices gradually, tasting as you add, until the flavors are balanced to your liking.  <br>
+     <br> 4. Control Heat: <br> Learn to control the heat on your stove or oven to prevent burning or undercooking your food. Use lower heat for delicate foods and higher heat for searing or browning. <br>
+     <br> 5. Stay Safe and Clean: <br> Safety and cleanliness are paramount in the kitchen. Always handle knives and hot surfaces with care to avoid accidents. Wash your hands frequently, especially after handling raw meat or poultry. Keep your cooking utensils, cutting boards, and countertops clean to prevent cross-contamination. <br>
+      </div>
+     </div>
+     
+     
+     <div id="about">
+        <h3> About CulinaryCanvas: </h3> 
+     
+         <p>Welcome to CulinaryCanvas, where gastronomy meets artistry! </p>
+         
+         <p>At CulinaryCanvas, we believe that cooking is not just about nourishment; it's a form of creative expression that tantalizes taste buds and delights the soul. Our food blog is a vibrant palette where flavors, textures, and aromas come together to create culinary masterpieces. </p>
+         
+         <p>Embark on a journey with us as we explore the vast and colorful world of food. From tantalizing recipes to insightful cooking tips and culinary adventures, CulinaryCanvas is your go-to destination for all things food-related. Whether you're a seasoned chef or a novice in the kitchen, our blog offers inspiration and guidance to help you unleash your inner culinary artist.
+         </p> <p>
+         Join us as we paint delicious canvases of flavor, texture, and aroma, one recipe at a time. Let's savor the joys of cooking and create unforgettable dining experiences together. Welcome to CulinaryCanvas, where every dish is a work of art!
+     </p> <br>
+     <a href="#" onclick="back()">Click to go back to Home Page</a>
+     </div>
+     
+     <div id="recipe">
+        
+         <div id="recipe1">
+         <h3>Pav Bhaji is a popular Indian street food that consists of a spicy and flavorful vegetable curry served with soft bread rolls (pav).</h3>
+         <img src="https://media.gettyimages.com/id/1334105187/photo/delicious-pav-bhaji-served-with-appetizers-on-a-wooden-tray.jpg?s=612x612&w=0&k=20&c=ZoMtJqUWdVAgggtTMV4yIV6F5HzqgsaPOycNd1jmyvE=" alt="">
+         <h4>Ingredients: <br> <br>
+             For Bhaji (Vegetable Curry):<br>
+             
+             2 large potatoes, boiled and mashed<br>
+             1 cup cauliflower florets, finely chopped<br>
+             1/2 cup green peas<br>
+             1/2 cup carrots, finely chopped<br>
+             1/2 cup bell peppers (capsicum), finely chopped<br>
+             1 large onion, finely chopped<br>
+             2 large tomatoes, finely chopped<br>
+             1/4 cup green beans, finely chopped<br>
+             1/4 cup butter<br>
+             1 tablespoon oil<br>
+             1 tablespoon ginger-garlic paste<br>
+             2 tablespoons Pav Bhaji masala<br>
+             1 teaspoon red chili powder (adjust to taste)<br>
+             1/2 teaspoon turmeric powder<br>
+             Salt to taste<br>
+             Fresh coriander leaves, chopped for garnish<br>
+             Lemon wedges for serving<br><br>
+             For Pav (Bread Rolls):<br>
+             8 pav (dinner rolls)<br>
+             Butter for toasting<br>
+             <br>
+             Instructions:<br>
+             1. Prepare the Bhaji:
+             <br>        
+             a. In a large pan, heat oil and butter. Add chopped onions and sauté until golden brown.
+             <br>
+             b. Add ginger-garlic paste and sauté for a minute until the raw smell disappears.
+             <br>
+             c. Add chopped tomatoes and cook until they become soft and oil starts to separate.
+             <br>
+             d. Add Pav Bhaji masala, red chili powder, turmeric powder, and salt. Mix well.
+             <br>
+             e. Add all the chopped vegetables (potatoes, cauliflower, peas, carrots, bell peppers, green beans). Mix thoroughly.
+             <br>
+             f. Mash the vegetables with a masher to achieve a thick consistency. Add water if needed. Simmer for 10-15 minutes on low heat.
+             <br>
+             2. Toast the Pav:
+             <br>
+             a. Slit the pav horizontally without cutting through completely.
+             <br>
+             b. Heat a pan and add a little butter. Toast the pav on both sides until they are golden brown.
+             <br>
+             3. Serve:
+             <br>
+             a. Garnish the Bhaji with chopped coriander leaves.
+             <br>
+             b. Serve the Pav Bhaji hot with toasted pav, lemon wedges, and additional butter if desired.
+             <br>
+             Enjoy your homemade Pav Bhaji! It's a delicious and satisfying dish that's perfect for a casual meal or snack.
+             <br><br>
+         <a href="#" onclick="back()">Click to go back to Home Page</a></h4>
+             
+     </div>
+     
+     <div id="recipe2">
+         <h3>Gulab Jamun is a popular Indian sweet made from deep-fried milk solids, which are then soaked in a flavored sugar syrup.</h3>
+         <img src="https://media.gettyimages.com/id/1369632825/photo/indian-dessert-gulab-jamun-in-white-bowl.jpg?s=612x612&w=0&k=20&c=3n8OCZuUe7ItQlARfL_J1i7GK2vDviauUZ2wz150W_c=" alt="">
+         <h4>
+             Ingredients:<br><br>
+     For Gulab Jamun:<br>
+     
+     1 cup Khoya/Mawa (reduced milk solids)<br>
+     3 tablespoons all-purpose flour (maida)<br>
+     A pinch of baking soda<br>
+     2 tablespoons ghee (clarified butter)<br>
+     Milk (as needed to knead the dough)<br><br>
+     For Sugar Syrup:<br>
+     
+     1 cup sugar<br>
+     1/2 cup water<br>
+     1/2 teaspoon cardamom powder<br>
+     A few saffron strands (optional)<br>
+     1 teaspoon rose water<br><br>
+     For Frying:<br>
+     
+     Ghee or oil for deep frying<br><br>
+     Instructions:<br>
+     1. Prepare the Sugar Syrup:<br>
+     
+     a. In a saucepan, combine sugar and water to make the sugar syrup.
+     <br>
+     b. Bring it to a boil, stirring continuously until the sugar dissolves.
+     <br>
+     c. Add cardamom powder, saffron strands (if using), and rose water.
+     <br>
+     d. Simmer for about 5-7 minutes until the syrup slightly thickens. Keep it warm.
+     <br>
+     2. Make the Gulab Jamun Dough:
+     <br>
+     a. In a mixing bowl, crumble or grate the khoya.
+     <br>
+     b. Add all-purpose flour and baking soda to the khoya. Mix well.
+     <br>
+     c. Add ghee and start kneading the mixture. If needed, add a little milk to form a smooth and soft dough.
+     <br>
+     3. Shape and Fry the Gulab Jamun:
+     <br>
+     a. Divide the dough into small portions and roll each portion into smooth, crack-free balls.
+     <br>
+     b. Heat ghee or oil in a pan over medium heat for deep frying.
+     <br>
+     c. Fry the Gulab Jamun balls until they turn golden brown, ensuring they are evenly cooked. Maintain a medium-low heat to avoid burning.
+     <br>
+     d. Remove the fried Gulab Jamun from the oil and drain excess oil by placing them on paper towels.
+     <br>
+     4. Soak in Sugar Syrup:
+     <br>
+     a. Immediately place the hot Gulab Jamun into the warm sugar syrup.
+     <br>
+     b. Allow them to soak for at least 2-3 hours, allowing the Gulab Jamuns to absorb the sugar syrup.
+     <br>
+     5. Serve:
+     <br>
+     a. Garnish with chopped nuts like pistachios or almonds (optional).
+     <br>
+     b. Serve Gulab Jamun warm or at room temperature.
+     <br>
+     Enjoy your homemade Gulab Jamun! It's a delightful and classic Indian sweet that's perfect for festivals and special occasions.
+     <br>   <br>
+     <a href="#" onclick="back()">Click to go back to Home Page</a>
+     </h4>
+     </div>
+     
+     <div id="recipe3">
+         <h3>Pancakes are flat, round cakes made from a batter of flour, eggs, and milk, cooked on a griddle and typically served with various toppings like syrup or fruit.
+         </h3>
+         <img src="https://media.gettyimages.com/id/1255787230/photo/tasty-blueberry-pancakes-with-syrup.jpg?s=612x612&w=0&k=20&c=URxgVkNFZWvGPpA-OOhE4v9M7qYiExr3tAhSAF_6Lq8=" alt="">
+         <h4>
+     Ingredients:<br><br>
+     1 cup all-purpose flour<br>
+     2 tablespoons sugar<br>
+     1 teaspoon baking powder<br>
+     1/2 teaspoon baking soda<br>
+     1/4 teaspoon salt<br>
+     3/4 cup buttermilk<br>
+     1/4 cup milk<br>
+     1 large egg<br>
+     2 tablespoons unsalted butter, melted<br>
+     1 teaspoon vanilla extract<br><br>
+     
+     Instructions:<br>
+     1. In a large bowl, whisk together the flour, sugar, baking powder, baking soda, and salt.<br>
+     2. In a separate bowl, whisk together the buttermilk, milk, egg, melted butter, and vanilla extract.<br>
+     3. Pour the wet ingredients into the dry ingredients and stir until just combined. Do not overmix; it's okay if there are some lumps.<br>
+     4. Heat a griddle or non-stick skillet over medium heat. Pour 1/4 cup of batter onto the griddle for each pancake.<br>
+     5. Cook until bubbles form on the surface of the pancake, then flip and cook until the other side is golden brown.<br>
+     6. Repeat with the remaining batter.<br>
+     7. Serve the pancakes warm with your favorite toppings, such as maple syrup, fresh fruits, or whipped cream.<br>
+     8. Enjoy your delicious homemade pancakes!<br><br>
+     <a href="#" onclick="back()">Click to go back to Home Page</a>
+         </h4>
+     </div>
+     
+     <div id="recipe4">
+         <h3>Muffins are individual-sized, quick-bread baked goods that come in various flavors and are often enjoyed for breakfast or as a snack.</h3>
+         <img src="https://media.gettyimages.com/id/1149029924/photo/unfrosted-cupcakes-on-a-white-plate.jpg?s=612x612&w=0&k=20&c=8H42c7o6qfk39ObfolAaDMStc6AyxXrx3NDGBPDWgyk=" alt="">
+         <h4>
+             Ingredients: <br> <br>
+     
+     1 1/2 cups all-purpose flour <br>
+     1/2 cup granulated sugar <br>
+     2 teaspoons baking powder <br>
+     1/2 teaspoon salt <br>
+     1/2 cup milk <br>
+     1/4 cup vegetable oil or melted butter <br>
+     1 large egg <br>
+     1 teaspoon vanilla extract <br>
+     Optional: Add-ins such as chocolate chips, blueberries, nuts, or dried fruit <br> <br>
+     Instructions: <br>
+     
+     1. Preheat your oven to 375°F (190°C). Prepare a muffin pan by lining it with paper liners or greasing the cups lightly with butter or cooking spray.
+     <br>
+     2. In a large mixing bowl, combine the flour, sugar, baking powder, and salt. Stir until well combined.
+     <br>
+     3. In another bowl, whisk together the milk, vegetable oil or melted butter, egg, and vanilla extract until smooth.
+     <br>
+     4. Pour the wet ingredients into the dry ingredients. Stir gently until just combined. Be careful not to overmix; it's okay if there are a few lumps in the batter. If you're adding any extra ingredients like chocolate chips or blueberries, gently fold them into the batter at this stage.
+     <br>
+     5. Spoon the batter into the prepared muffin cups, filling each about two-thirds full.
+     <br>
+     6. If desired, sprinkle the tops of the muffins with a little extra sugar for a sweet, crunchy crust.
+     <br>
+     7. Place the muffin pan in the preheated oven and bake for 18 to 20 minutes, or until the muffins are golden brown and a toothpick inserted into the center comes out clean.
+     <br>
+     8. Remove the muffin pan from the oven and allow the muffins to cool in the pan for a few minutes before transferring them to a wire rack to cool completely.
+     <br>
+     9. Once cooled, serve and enjoy your delicious homemade muffins! They're perfect for breakfast, brunch, or as a tasty snack any time of day.
+        <br> <br> <a href="#" onclick="back()">Click to go back to Home Page</a>
+     <br> </h4>
+     </div>
+     
+     <div id="recipe5">
+         <h3>Sandwiches are like tasty edible puzzles, where delicious fillings get sandwiched between slices of bread, creating delightful handheld meals bursting with flavor and creativity!</h3>
+         <img src="https://media.gettyimages.com/id/1220390518/photo/vegan-super-sandwich-served-with-sprouts.jpg?s=612x612&w=0&k=20&c=4FZnOUS7CmlPonqfvLml_vbt6Lm31koKmKYkR65B6sw=" alt="">
+         <h4>
+     Ingredients: <br><br>
+     
+     2 slices of bread (your choice of whole wheat, white, sourdough, etc.) <br>
+     2-3 slices of your preferred protein (such as turkey, ham, chicken, roast beef, tofu, or tempeh) <br>
+     1-2 slices of cheese (options include cheddar, Swiss, provolone, mozzarella, or your favorite cheese) <br>
+     Lettuce leaves <br>
+     Sliced tomatoes <br>
+     Sliced cucumbers <br>
+     Sliced red onion (optional) <br>
+     Condiments of your choice (mayonnaise, mustard, ketchup, pesto, hummus, etc.) <br> <br>
+     Instructions: <br>
+     
+     1. Begin by toasting the bread slices lightly, if desired. This step is optional but can add extra texture and flavor to your sandwich. <br>
+     
+     2. Lay the toasted bread slices flat on a clean surface.
+     <br>
+     3. Spread your preferred condiments on one or both slices of bread. For example, you might spread mayonnaise on one slice and mustard on the other.
+     <br>
+     4. Layer the sandwich ingredients on top of one of the bread slices in the following order: lettuce leaves, sliced tomatoes, sliced cucumbers, sliced red onion (if using), cheese slices, and your chosen protein slices.
+     <br>
+     5. Place the second slice of bread on top of the layered ingredients to form a sandwich.
+     <br>
+     6. Gently press down on the sandwich to ensure all the ingredients hold together.
+     <br>
+     7. If desired, you can cut the sandwich in half diagonally or straight across the middle to create two triangular halves.
+     <br>
+     8. Your classic sandwich is now ready to serve! Enjoy it as a delicious lunch or snack option. <br> <br>
+     <a href="#" onclick="back()">Click to go back to Home Page</a>
+     <br>
+         </h4>
+     </div>
+     
+     <div id="recipe6">
+     <h3>Spaghetti is a type of long, thin pasta made from wheat flour and water, commonly used in various Italian dishes.</h3>
+     <img src="https://images.unsplash.com/photo-1622973536968-3ead9e780960?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BhZ2hldHRpfGVufDB8fDB8fHww" alt="">
+     <h4><br>
+         Ingredients: <br>
+     
+     8 ounces (225g) spaghetti <br>
+     2 tablespoons olive oil <br>
+     3 cloves garlic, minced <br>
+     1 small onion, finely chopped <br>
+     1 can (14.5 ounces) diced tomatoes <br>
+     1 teaspoon dried oregano <br>
+     1 teaspoon dried basil <br>
+     Salt and pepper to taste <br>
+     Grated Parmesan cheese for serving (optional) <br>
+     Fresh basil leaves for garnish (optional) <br> <br>
+     Instructions: <br>
+     
+     1. Cook the Spaghetti: <br>
+     
+     a. Bring a large pot of salted water to a boil. <br>
+     b. Add the spaghetti and cook according to the package instructions until al dente. <br>
+     c. Once cooked, drain the spaghetti and set aside. <br>
+     2. Prepare the Sauce: <br>
+     
+     a. In a large skillet, heat the olive oil over medium heat. <br>
+     b.Add the minced garlic and chopped onion, sauté until the onions are soft and translucent, about 3-4 minutes. <br>
+     c.  in the diced tomatoes, dried oregano, and dried basil. <br>
+     d. Season with salt and pepper to taste. <br>
+     e. Let the sauce simmer for about 10-15 minutes, stirring occasionally, until it thickens slightly. <br>
+     3. Combine the Spaghetti and Sauce: <br>
+     
+     a. Once the sauce is ready, add the cooked spaghetti to the skillet. <br>
+     b. Toss the spaghetti with the sauce until it is well coated. <br>
+     c. Cook for an additional 1-2 minutes, allowing the flavors to meld together. <br>
+     4. Serve: <br>
+     
+     a. Divide the spaghetti among serving plates. <br>
+     b. Sprinkle with grated Parmesan cheese if desired. <br>
+     c. Garnish with fresh basil leaves for an extra burst of flavor. <br>
+     d. Serve hot and enjoy! <br> <br>
+     <a href="#" onclick="back()">Click to go back to Home Page</a> <br>
+     </h4>
+     </div>
+     
+     <div id="recipe7">
+        <h3>Chicken tikka masala is a classic Indian dish consisting of marinated and grilled chicken pieces simmered in a creamy tomato-based sauce, typically flavored with various spices such as cumin, coriander, and garam masala.</h3>
+     <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hpY2tlbiUyMHRpa2thJTIwbWFzYWxhfGVufDB8fDB8fHww" alt="">
+    <h4>
+        Ingredients: <br> <br>
+
+For the Chicken Tikka: <br>
+
+500g boneless, skinless chicken breasts, cut into bite-sized pieces <br>
+1 cup plain yogurt <br>
+2 tablespoons lemon juice <br>
+2 teaspoons ground cumin <br>
+2 teaspoons ground coriander <br>
+1 teaspoon paprika <br>
+1 teaspoon turmeric <br>
+1 teaspoon garam masala <br>
+1 teaspoon salt <br>
+2 cloves garlic, minced <br>
+1 tablespoon grated fresh ginger <br><br>
+For the Sauce: <br>
+
+2 tablespoons vegetable oil <br>
+1 large onion, finely chopped <br>
+2 cloves garlic, minced <br>
+1 tablespoon grated fresh ginger <br>
+1 teaspoon ground cumin <br>
+1 teaspoon ground coriander <br>
+1 teaspoon paprika <br>
+1 teaspoon turmeric <br>
+1 teaspoon garam masala <br>
+1/2 teaspoon chili powder (adjust to taste) <br>
+1 can (400g) crushed tomatoes <br>
+1 cup heavy cream <br>
+Salt, to taste <br>
+Fresh cilantro leaves, for garnish <br><br>
+Instructions: <br>
+
+1. In a bowl, combine the yogurt, lemon juice, ground cumin, ground coriander, paprika, turmeric, garam masala, salt, minced garlic, and grated ginger. Add the chicken pieces and coat them well with the marinade. Cover and refrigerate for at least 1 hour, or preferably overnight.
+<br>
+2. Preheat your grill or broiler. Thread the marinated chicken pieces onto skewers and grill or broil until they are cooked through and slightly charred, about 10-12 minutes, turning occasionally. Remove from heat and set aside.
+<br>
+3. In a large skillet, heat the vegetable oil over medium heat. Add the chopped onion and cook until soft and translucent, about 5-7 minutes. Add the minced garlic and grated ginger, and cook for another 2 minutes.
+<br>
+4. Stir in the ground cumin, ground coriander, paprika, turmeric, garam masala, and chili powder. Cook for 1-2 minutes until fragrant.
+<br>
+5. Add the crushed tomatoes to the skillet and bring the mixture to a simmer. Cook for 10-15 minutes, stirring occasionally, until the sauce thickens.
+<br>
+6. Stir in the heavy cream and salt to taste. Add the grilled chicken tikka pieces to the sauce and simmer for another 5-10 minutes, allowing the flavors to meld together.
+<br>
+7. Garnish with fresh cilantro leaves before serving. Serve hot with steamed rice or naan bread. <br> <br>
+<a href="#" onclick="back()">Click to go back to Home Page</a> <br>
+    </h4>
+    </div>
+ 
+    <div id="recipe8">
+        <h3>Chocolate lava cake is a decadent dessert featuring a rich chocolate cake with a gooey, molten chocolate center.</h3>
+        <img src="https://images.unsplash.com/photo-1626263468007-a9e0cf83f1ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNob2NvbGF0ZSUyMGNha2V8ZW58MHx8MHx8fDA%3D" alt="">
+    <h4>
+        Ingredients: <br><br>
+
+4 ounces (113g) semisweet or bittersweet chocolate, chopped <br>
+1/2 cup (115g) unsalted butter <br>
+1 and 1/2 cups (180g) powdered sugar <br>
+2 large eggs <br>
+2 large egg yolks <br>
+1 teaspoon vanilla extract <br>
+6 tablespoons (48g) all-purpose flour <br>
+Optional: cocoa powder or powdered sugar for dusting <br>
+Optional: vanilla ice cream or whipped cream for serving <br><br>
+Instructions:<br>
+
+1. Preheat your oven to 425°F (220°C). Grease 4 ramekins (6-ounce capacity each) with butter and dust them lightly with cocoa powder or powdered sugar.
+<br>
+2. In a microwave-safe bowl, combine the chopped chocolate and butter. Microwave in 20-30 second increments, stirring after each interval, until the chocolate and butter are melted and smooth. Be careful not to overheat.
+<br>
+3. In a separate mixing bowl, whisk together the powdered sugar, eggs, egg yolks, and vanilla extract until well combined.
+<br>
+4. Gradually pour the melted chocolate mixture into the egg mixture, whisking constantly until smooth and well combined.
+<br>
+5. Add the flour to the chocolate mixture and gently fold it in until just combined. Be careful not to overmix.
+<br>
+6. Divide the batter evenly among the prepared ramekins, filling them about 3/4 full.
+<br>
+7. Place the ramekins on a baking sheet and transfer them to the preheated oven.
+<br>
+8. Bake for 12-14 minutes, or until the edges of the cakes are set but the centers still look soft.
+<br>
+9. Remove the lava cakes from the oven and let them cool for 1-2 minutes. Then, carefully run a knife around the edges of each ramekin to loosen the cakes.
+<br>
+10. Place a plate upside down over each ramekin, then quickly invert the ramekin and plate together to release the cake onto the plate. Be careful, as the ramekins will be hot.
+<br>
+11. Dust the tops of the lava cakes with cocoa powder or powdered sugar, if desired.
+<br>
+12. Serve immediately with a scoop of vanilla ice cream or a dollop of whipped cream on top. <br><br>
+<a href="#" onclick="back()">Click to go back to Home Page</a> <br>
+    </h4>
+    
+    </div>
+
+     </div>
+
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
